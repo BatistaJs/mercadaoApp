@@ -22,7 +22,7 @@ class Estrutura extends Component {
                 <TouchableOpacity onPress={this.toggleDrawer.bind(this)}>
                     {}
                     <Image
-                        source={require('/home/jessica/terminal/images/drawer.png')}
+                        source={require('./images/drawer.png')}
                         style={{ width: 25, height: 25, marginLeft: 5 }}></Image>
                 </TouchableOpacity>
 
@@ -34,7 +34,7 @@ class Estrutura extends Component {
 const CustomDrawerComponent = props => (
     <SafeAreaView style={{ flex: 1 }}>
         <View style={styles.Drawer}>
-            <Image source={require('/home/jessica/terminal/images/iconeCesta.png')}
+            <Image source={require('./images/iconeCesta.png')}
                 style={{ height: 100, width: 100 }}
             ></Image>
         </View>

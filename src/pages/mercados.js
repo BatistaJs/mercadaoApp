@@ -28,7 +28,7 @@ const Second = ({ navigation }) => (
 const actions = [
     {
         text: 'Salvar',
-        icon: require("/home/jessica/terminal/images/botao-salvar.png"),
+        icon: require('./../images/botao-salvar.png'),
         name: "bt-salvar",
         position: 1,
         color: '#FFBF00'

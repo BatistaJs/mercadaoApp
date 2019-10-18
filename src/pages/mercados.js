@@ -67,6 +67,15 @@ const Second = ({ navigation }) => (
 
 )
 
+const actions = [
+    {
+        text: 'Salvar',
+        icon: require('./../images/botao-salvar.png'),
+        name: "bt-salvar",
+        position: 1,
+        color: '#FFBF00'
+    }
+];
 
 const styles = StyleSheet.create({
     container: {

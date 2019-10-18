@@ -6,7 +6,8 @@ import { createStackNavigator } from 'react-navigation-stack';
 // importando as pages
 import Home from './pages/Home';
 import Mercados from './pages/mercados';
-import ListaSalva from './pages/ListaSalva'
+import ListaSalva from './pages/ListaSalva';
+import Merca1 from './pages/Mercado 1'
 
 
 class Estrutura extends Component {
@@ -51,7 +52,7 @@ const FirtActivity = createStackNavigator({
 
     First:
     {
-        screen: Home,
+        screen: Home,// nome dado a constante na pg
         navigationOptions: ({ navigation }) => ({
             title: 'Home',
             headerLeft: <Estrutura navigationProps={navigation} />,
@@ -70,7 +71,7 @@ const Tela2 = createStackNavigator({
     {
         screen: Mercados,
         navigationOptions: ({ navigation }) => ({
-            title: 'Mercado 1',
+            title: 'Mercados',
             headerLeft: <Estrutura navigationProps={navigation} />,
             headerStyle: {
                 backgroundColor: '#FF9800',
@@ -96,6 +97,23 @@ const Listas = createStackNavigator({ // mesmo nome no DrawerNavigator
 
 });
 
+
+const Mercado1 = createStackNavigator({ // mesmo nome no DrawerNavigator
+    MercadoUm:
+    {
+        screen: Merca1,
+        navigationOptions: ({ navigation }) => ({
+            title: 'Mercado 1 ',
+            headerLeft: <Estrutura navigationProps={navigation} />,
+            headerStyle: {
+                backgroundColor: '#FF9800'
+            },
+            headerTintColor: '#fff'
+        }),
+    },
+
+});
+
 const DrawerNavigator = createDrawerNavigator({
     Home:
     {
@@ -108,7 +126,7 @@ const DrawerNavigator = createDrawerNavigator({
     {
         screen: Tela2,
         navigationOptions: {
-            drawerLabel: 'Mercado 1'
+            drawerLabel: 'Mercados'
         },
     },
     ListaSalva:
@@ -116,6 +134,14 @@ const DrawerNavigator = createDrawerNavigator({
         screen: Listas,
         navigationOptions: {
             drawerLabel: 'Listas Salvas'
+        }
+    },
+    Merca1: // aqui vai ficar a lista do mercado 1 / aqui é pra colacar na aba certo?
+    {
+        screen: Mercado1,
+        navigationOptions:
+        {
+            drawerLabel: 'Mercadao 1'
         }
     }
 },

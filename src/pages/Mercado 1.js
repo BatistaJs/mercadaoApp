@@ -1,21 +1,10 @@
 import { View, Text, StyleSheet, Button } from 'react-native';
 import React, { Component } from 'react';
 
-const First = ({ navigation }) => (
+const MercadoUm = ({ navigation }) => (
 
     <View style={styles.View}>
-        <Text style={styles.BemVindo}>Bem Vindo!!</Text>
-        <Text style={styles.textsuper}>super</Text>
-        <Text style={styles.Mercadao}>MERCADÃO</Text>
-        <Text style={styles.mensagem}> Faça sua lista e boas compras!!</Text>
-        <View style={styles.botaoView}>
-            <Button onPress={() => navigation.navigate('Mercados')}
-                title='Ir para os Mercados'
-                color='#FF9800'
-                style={styles.botaoView}
-            ></Button>
-        </View>
-
+        <Text style={styles.BemVindo}>Listas dos produtos</Text>
 
     </View>
 
@@ -59,4 +48,5 @@ const styles = StyleSheet.create({
 
 
 });
-export default First;
+export default MercadoUm;
+

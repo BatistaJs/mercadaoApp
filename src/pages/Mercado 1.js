@@ -27,25 +27,6 @@ const styles = StyleSheet.create({
         color: '#ffffff'
 
     },
-    Mercadao:
-    {
-        fontSize: 30,
-        fontWeight: 'bold',
-        color: '#FF9800'
-    },
-    botaoView:
-    {
-        alignItems: 'stretch'
-    },
-
-    textsuper:
-    {
-        fontSize: 30,
-        fontWeight: 'bold',
-        color: '#FFBF00',
-        alignItems: 'baseline'
-    }
-
 
 });
 export default MercadoUm;
